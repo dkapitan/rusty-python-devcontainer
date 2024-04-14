@@ -24,6 +24,17 @@ You can change the setup of the devcontainer in the following layers:
   - Specify which apt-packages you need (useful for experimenting without changing the Dockerfile), for example adding `default-jdk` to be able to run pyspark
 - Change `/workspaces/rusty-python/.devcontainer/scripts/usr/local/bin/onCreateCommand.sh`: add any other stuff, such as customizing the shell or installing a `requirements.txt`
 
-## Rusty Python
+## Rusty Python for data science & AI
 
-We love the Rustification of Python, because it improves the development with tools such as Ruff and pixi, and we enjoy significant performance gains with polars and pydantic.
+We love the Rustification of Python because it improves the development with tools such as
+-   [Ruff](https://docs.astral.sh/ruff/) for linting and code formatting
+-   [uv](https://github.com/astral-sh/uv) as a drop-in replacement for `pip`
+-   [rye](https://github.com/astral-sh/rye) as a comprehensive project and package management solution for Python
+-   [pixi](https://prefix.dev/) as fast software package manager built on top of the existing conda ecosystem
+
+For data science & AI, we enjoy significant performance gains with
+- [polars](https://pola.rs/) to handle DataFrames in the new era, and writing plugins in Rust is [not that hard](https://marcogorelli.github.io/polars-plugins-tutorial/)
+- [pydantic](https://docs.pydantic.dev/latest/) for data validation
+- [tokenizers](https://github.com/huggingface/tokenizers) by Huggingface, that provides an implementation of today's most used tokenizers, with a focus on performance and versatility
+- [VegaFusion](https://vegafusion.io/index.html) provides serverside scaling for the Vega visualization library, including the Altair Python interface to Vega-Lite
+- [Robyn](https://robyn.tech/), a web framework that can be used to build async APIs
