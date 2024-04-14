@@ -38,3 +38,5 @@ For data science & AI, we enjoy significant performance gains with
 - [tokenizers](https://github.com/huggingface/tokenizers) by Huggingface, that provides an implementation of today's most used tokenizers, with a focus on performance and versatility
 - [VegaFusion](https://vegafusion.io/index.html) provides serverside scaling for the Vega visualization library, including the Altair Python interface to Vega-Lite
 - [Robyn](https://robyn.tech/), a web framework that can be used to build async APIs
+
+Keen to learn Rust? Try [Google's Comprehensive Rust course](https://google.github.io/comprehensive-rust/) or dive into ["the book'](https://www.rust-lang.org/learn).
